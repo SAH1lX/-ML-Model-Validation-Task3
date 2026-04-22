@@ -1,5 +1,9 @@
 # 🏠 House Price Prediction using Model Validation & Hyperparameter Tuning
 
+This project demonstrates how to improve machine learning models using validation techniques and hyperparameter tuning to reduce overfitting and improve generalization.
+
+---
+
 ## 📌 Overview
 This project focuses on improving a house price prediction model by applying key machine learning techniques such as overfitting detection, cross-validation, and hyperparameter tuning.
 
@@ -68,6 +72,11 @@ Target variable: Median House Price
 
 ---
 
+## 🎯 Project Outcome
+The Tuned Decision Tree model significantly improved performance by reducing overfitting and achieved the best balance between accuracy and generalization.
+
+---
+
 ## 📂 Project Files
 - 📓 Notebook: `Task3_Model_Validation.ipynb`
 - 📄 Report: `Task3_Model_Validation_Report.pdf`
@@ -86,6 +95,12 @@ Target variable: Median House Price
 - Role of cross-validation in reliable evaluation
 - Impact of hyperparameter tuning on model performance
 - Model selection should focus on generalization, not just accuracy
+
+---
+
+## 👤 Author
+**Sahil Bhatti**
+AI/ML Internship Task
 
 ---
 
