@@ -55,6 +55,9 @@ The models were evaluated using:
 Final results include a comparison table and visual graphs.
 
 ---
+## 📄 Project Report
+Download the detailed report:  
+👉 [Task 3 Model Validation Report](Task3_Model_Validation_Report.pdf)
 
 ## 📂 Project Structure
 
