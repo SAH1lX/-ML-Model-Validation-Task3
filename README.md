@@ -1,7 +1,7 @@
-# 🏠 House Price Prediction – Model Validation & Hyperparameter Tuning
+# 🏠 House Price Prediction using Model Validation & Hyperparameter Tuning
 
 ## 📌 Overview
-This project focuses on improving a house price prediction model by applying advanced machine learning techniques such as overfitting detection, cross-validation, and hyperparameter tuning.
+This project focuses on improving a house price prediction model by applying key machine learning techniques such as overfitting detection, cross-validation, and hyperparameter tuning.
 
 The goal is to build a model that not only performs well on training data but also generalizes effectively to unseen data.
 
@@ -9,6 +9,16 @@ The goal is to build a model that not only performs well on training data but al
 
 ## 📊 Dataset
 - California Housing Dataset (from scikit-learn)
+
+Features include:
+- Median Income
+- House Age
+- Average Rooms
+- Population
+- Occupancy
+- Latitude & Longitude
+
+Target variable: Median House Price
 
 ---
 
@@ -22,60 +32,61 @@ The goal is to build a model that not only performs well on training data but al
 
 ---
 
-## 🤖 Models Implemented
-- Linear Regression
-- Ridge Regression
-- Decision Tree Regressor
+## 🤖 Models Used
+- Linear Regression (Baseline)
+- Ridge Regression (Regularized)
+- Decision Tree Regressor (Overfitting Analysis)
 - Tuned Decision Tree (Final Model)
 
 ---
 
 ## ⚙️ Techniques Applied
 - Data Preprocessing & Feature Scaling
-- Train-Test Split
+- Train-Test Split (80:20)
 - Overfitting Detection (Train vs Test Performance)
 - 5-Fold Cross Validation
 - Hyperparameter Tuning using GridSearchCV
 
 ---
 
-## 📈 Results & Insights
-- Decision Tree initially showed **overfitting** (very low training error, higher test error)
-- Cross-validation provided a more reliable performance estimate
-- Hyperparameter tuning reduced overfitting and improved generalization
-- ✅ Tuned Decision Tree achieved the best performance
+## 📊 Final Results
+
+| Model               | RMSE   | R² Score |
+|--------------------|--------|----------|
+| Linear Regression  | 0.7456 | 0.5758   |
+| Ridge Regression   | 0.7456 | 0.5758   |
+| Tuned Decision Tree| 0.6389 | 0.6885   |
+
+👉 The Tuned Decision Tree achieved the best performance by reducing overfitting and improving generalization.
 
 ---
 
-## 📉 Model Comparison
-The models were evaluated using:
-- RMSE (Root Mean Squared Error)
-- R² Score
-
-Final results include a comparison table and visual graphs.
-
----
-## 📄 Project Report
-Download the detailed report:  
-👉 [Task 3 Model Validation Report](Task3_Model_Validation_Report.pdf)
-
-## 📂 Project Structure
+## 📉 Insights
+- Decision Tree initially overfitted the data (very low training error, high test error)
+- Cross-validation provided more reliable model evaluation
+- Hyperparameter tuning significantly improved model performance
 
 ---
 
-## 🚀 Key Learnings
-- Importance of detecting and controlling overfitting
-- Why cross-validation is essential for reliable evaluation
-- How hyperparameter tuning improves model performance
-- Model selection should focus on generalization, not just accuracy
+## 📂 Project Files
+- 📓 Notebook: `Task3_Model_Validation.ipynb`
+- 📄 Report: `Task3_Model_Validation_Report.pdf`
 
 ---
 
-## 🔗 How to Run
+## 🚀 How to Run
 1. Clone the repository
-2. Open the notebook in Jupyter
+2. Open the notebook in Jupyter Notebook
 3. Run all cells to reproduce results
 
 ---
 
-⭐ This project is part of an AI/ML internship task.
+## 📚 Key Learnings
+- Importance of detecting and controlling overfitting
+- Role of cross-validation in reliable evaluation
+- Impact of hyperparameter tuning on model performance
+- Model selection should focus on generalization, not just accuracy
+
+---
+
+⭐ This project was completed as part of an AI/ML Internship Task.
